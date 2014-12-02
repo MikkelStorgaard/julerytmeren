@@ -110,7 +110,7 @@ function setBPM(string){
         BPM = parseFloat($('#bpm').val()).toFixed(1);
 
     }
-    DOWNBEAT = (60000 / BPM).toFixed(1);
+    DOWNBEAT = (60000 / BPM * 2).toFixed(1);
     UPBEAT = (60000 / BPM).toFixed(1);
     $('#bpm').val(BPM.toString());
     }
